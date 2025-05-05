@@ -13,7 +13,7 @@ const ProductSearch = () => {
   const fetchProducts = async (search = '') => {
     setLoading(true)
     try {
-      const response = await axios.get(`/products${search ? `?search=${search}` : ''}`)
+      const response = await axios.get(`https://e-commerce-project-xhtb.onrender.com/products${search ? `?search=${search}` : ''}`)
       setProducts(response.data)
       setError(null)
     } catch (err) {

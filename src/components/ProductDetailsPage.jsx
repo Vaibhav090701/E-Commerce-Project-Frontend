@@ -14,7 +14,7 @@ const ProductDetailsPage = () => {
     const fetchProduct = async () => {
       setLoading(true)
       try {
-        const response = await axios.get(`/products/${id}`)
+        const response = await axios.get(`https://e-commerce-project-xhtb.onrender.com/products/${id}`)
         setProduct(response.data)
         setError(null)
       } catch (err) {
